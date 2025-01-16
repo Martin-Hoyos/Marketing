@@ -6,16 +6,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.tailwindcss.com"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <script src="../js/menu_idiomas.js">
+    <script src="WEN-INF/js/menu_idiomas.js">
     </script>
 <body>
 <header class="hidden-header">
     <div class="logo">
-        <h1><a href="index.html"><img src="logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
+        <h1><a href="index.html"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
     </div>
     <nav>
         <ul>
@@ -44,7 +44,7 @@
         <section class="hero">
             <div class="logo-container">
                 <div class="background"></div>
-                <img src="../fotos/BELLAVISTA_LOGO_BLANCO.png" alt="logoHero">
+                <img src="fotos/BELLAVISTA_LOGO_BLANCO.png" alt="logoHero">
             </div>
             
         </section>
@@ -52,7 +52,7 @@
             <!-- Contenido adicional -->
             <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-1/2">
-                 <img alt="A table with a sandwich, fries, a blue cocktail, and an orange drink" class="w-full h-full object-cover" src="../fotos/FOTO_CACERES.jpg"/>
+                 <img alt="A table with a sandwich, fries, a blue cocktail, and an orange drink" class="w-full h-full object-cover" src="fotos/FOTO_CACERES.jpg"/>
                 </div>
                 <div class="lg:w-1/2 p-8 lg:p-16">
                  <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">
@@ -141,7 +141,7 @@
                   </div>
                  </div>
                  <div class="relative">
-                  <img src="../fotos/pestana-cr7-gran-via-room-deluxe-bed.jpg"/>
+                  <img src="fotos/pestana-cr7-gran-via-room-deluxe-bed.jpg"/>
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                    <div class="flex items-center text-white mb-2">
                     <i class="fas fa-users mr-2">
@@ -165,7 +165,7 @@
                   </div>
                  </div>
                  <div class="relative">
-                  <img src="../fotos/FOTO1_SUITE_KING_BALCON.jpeg"/>
+                  <img src="fotos/FOTO1_SUITE_KING_BALCON.jpeg"/>
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                    <div class="flex items-center text-white mb-2">
                     <i class="fas fa-users mr-2">
@@ -306,13 +306,13 @@
             </div>
             <!-- Logo -->
             <div>
-             <img width="140px" height="70px" alt="Company logo with a simple and elegant design" src="../fotos/BELLAVISTA_LOGO_BLANCO.png"/>
+             <img width="140px" height="70px" alt="Company logo with a simple and elegant design" src="fotos/BELLAVISTA_LOGO_BLANCO.png"/>
             </div>
            </div>
           </div>
          </footer>
        
 
-    <script src="../js/menu.js"></script>
+    <script src="WEB-INF/js/menu.js"></script>
 </body>
 </html>
