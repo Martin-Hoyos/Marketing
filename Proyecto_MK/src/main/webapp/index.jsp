@@ -10,21 +10,22 @@
   <script src="https://cdn.tailwindcss.com"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <script src="WEN-INF/js/menu_idiomas.js">
+    <script src="WEB-INF/js/menu_idiomas.js">
     </script>
+
 <body>
 <header class="hidden-header">
     <div class="logo">
-        <h1><a href="index.html"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
+        <h1><a href="index.jsp"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
     </div>
     <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.jsp">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="Habitaciones/habitaciones.html">Habitaciones</a></li>
-            <li><a href="../html/contacto.html">Contáctanos</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
             <li>
-                <button><span><a href="reservar.html">Reservar</a></span></button>
+                <button><span><a href="reservar.jsp">Reservar</a></span></button>
             </li>
             <li id="flags">
                 <!-- Menú de idiomas -->
@@ -117,7 +118,7 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                  <div class="relative">
-                  <img  src="../fotos/FOTO_SUITE_QUEEN.jpg"/>
+                  <img  src="fotos/FOTO_SUITE_QUEEN.jpg"/>
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                    <div class="flex items-center text-white mb-2">
                     <i class="fas fa-user mr-2">
@@ -314,5 +315,15 @@
        
 
     <script src="WEB-INF/js/menu.js"></script>
+    <script >
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('.hidden-header');
+        if (window.scrollY > 725) { 
+            header.classList.add('visible');
+        } else {
+            header.classList.remove('visible');
+        }
+    });
+	</script>
 </body>
 </html>
