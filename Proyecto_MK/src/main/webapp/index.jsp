@@ -10,10 +10,11 @@
   <script src="https://cdn.tailwindcss.com"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    
     <script src="WEB-INF/js/menu_idiomas.js">
     </script>
-
 <body>
+    
 <header class="hidden-header">
     <div class="logo">
         <h1><a href="index.jsp"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
@@ -61,7 +62,7 @@
                  </h2>
                  <div class="textoexplicacion">
                  <h1 class="text-4xl font-bold mb-4">
-                  La Belleza de la naturaleza
+                  La Belleza de la Naturaleza
                  </h1>
                  <p class="text-lg mb-4">
                  Sumérgete en la tranquilidad de nuestro hotel rural, un paraíso diseñado para quienes buscan desconectar en un entorno exclusivo y lleno de encanto. Rodeado de paisajes impresionantes y detalles cuidadosamente pensados, combinamos la calidez de lo rústico con el confort de instalaciones de lujo.</p>
