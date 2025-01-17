@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page import="java.sql.*, java.util.*" %>
 <%@ page import="bbddConnector.bbddConnectorV2" %>
 
@@ -59,20 +58,21 @@
         }
 
 
-        .logo {
-            text-decoration: none;
-            color: inherit;
-            width: 100px;
-            height: 100px;
-            margin-top: 40px;
-            margin-left: 60px;
-        }
+.logo {
+    text-decoration: none;
+    color: inherit;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
 
-        .logo-container img {
-            display: block;
-            height: 50px; 
-            position: relative;
-            z-index: 2; 
+
+.logo-container img {
+    display: block;
+    height: 500px; 
+    position: relative;
+    z-index: 1; 
         }
 
         nav ul {
@@ -145,11 +145,7 @@
 <header class="hidden-header">
     <div class="container mx-auto flex justify-between items-center px-4">
         <div class="logo">
-            <h1>
-                <a href="index.html">
-                    <img alt="Logo del menú del hotel Bellavista en color blanco" src="fotos/logo_BELLAVIST_blanco.png"/>
-                </a>
-            </h1>
+             <h1><a href="index.jsp"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
         </div>
         <nav>
             <ul class="flex space-x-4">
