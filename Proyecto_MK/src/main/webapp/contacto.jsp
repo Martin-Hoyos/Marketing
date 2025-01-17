@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Lugares</title>
 <link rel="stylesheet" href="../css/style_contacto.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -235,5 +235,17 @@
              </div>
             </div>
         </footer>
+        
+    <script src="WEB-INF/js/menu.js"></script>
+    <script >
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('.hidden-header');
+        if (window.scrollY > -1) { 
+            header.classList.add('visible');
+        } else {
+            header.classList.remove('visible');
+        }
+    });
+	</script>
 </body>
-</html>
+Lugares
