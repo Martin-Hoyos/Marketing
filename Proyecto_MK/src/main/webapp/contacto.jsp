@@ -4,8 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< Updated upstream
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/style_contacto.css">
+=======
+<title>Ricardo</title>
+<link rel="stylesheet" href="../css/style_contacto.css">
+>>>>>>> Stashed changes
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
