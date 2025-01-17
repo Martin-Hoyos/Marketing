@@ -5,20 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="../css/style_contacto.css">
+<link rel="stylesheet" href="css/style_contacto.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
  <header>
             <div class="logo">
-                <a href="index.html"><img src="../fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a>
+                <a href="index.html"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="Habitaciones/habitaciones.html">Habitaciones</a></li>
-                    <li><a href="../html/contacto.html">Contáctanos</a></li>
+                    <li><a href="contacto.jsp">Contáctanos</a></li>
                     <li>
                         <button><span><a href="reservar.html">Reservar</a></span></button>
                     </li>
@@ -29,7 +29,7 @@
             <div class="hotel">
                 <!-- Imagen Grande del Hotel -->
                 <div class="hotel-image">
-                    <img src="../fotos/hotel1.png" alt="Descripción de la imagen">
+                    <img src="fotos/hotel1.png" alt="Descripción de la imagen">
                 </div>
                 <!-- Detalles de Contacto con Mapa al lado -->
                 <div class="hotel-details">
@@ -59,7 +59,7 @@
             <div class="hotel">
                 <!-- Imagen Grande del Hotel -->
                 <div class="hotel-image">
-                    <img src="../fotos/hotel2.png" alt="Descripción de la imagen">
+                    <img src="fotos/hotel2.png" alt="Descripción de la imagen">
                 </div>
                 <!-- Detalles de Contacto con Mapa al lado -->
                 <div class="hotel-details">
@@ -89,7 +89,7 @@
             <div class="hotel">
                 <!-- Imagen Grande del Hotel -->
                 <div class="hotel-image">
-                    <img src="../fotos/hotel3.png" alt="Descripción de la imagen">
+                    <img src="fotos/hotel3.png" alt="Descripción de la imagen">
                 </div>
                 <!-- Detalles de Contacto con Mapa al lado -->
                 <div class="hotel-details">
