@@ -10,6 +10,7 @@
   <script src="https://cdn.tailwindcss.com"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="<%= request.getContextPath() %>/fotos/logo_BELLAVIST_blanco.png" />
     <script src="WEB-INF/js/menu_idiomas.js">
     </script>
 
