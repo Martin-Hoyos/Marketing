@@ -235,5 +235,17 @@
              </div>
             </div>
         </footer>
+        
+    <script src="WEB-INF/js/menu.js"></script>
+    <script >
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('.hidden-header');
+        if (window.scrollY > -1) { 
+            header.classList.add('visible');
+        } else {
+            header.classList.remove('visible');
+        }
+    });
+	</script>
 </body>
-</html>
+Lugares

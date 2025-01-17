@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,18 +59,17 @@
                  <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">
                   Vista General
                  </h2>
+                 <div class="textoexplicacion">
                  <h1 class="text-4xl font-bold mb-4">
                   La Belleza de la naturaleza
                  </h1>
                  <p class="text-lg mb-4">
-                  Desayunar en la terraza, comer una pizza con sello napolitano, disfrutar de un cóctel con una de las mejores vistas panorámicas de Madrid o hacerte una foto durante el atardecer. Todo ello es posible en Pestana CR7 Gran Vía.
-                 </p>
+                 Sumérgete en la tranquilidad de nuestro hotel rural, un paraíso diseñado para quienes buscan desconectar en un entorno exclusivo y lleno de encanto. Rodeado de paisajes impresionantes y detalles cuidadosamente pensados, combinamos la calidez de lo rústico con el confort de instalaciones de lujo.</p>
                  <p class="text-lg mb-4">
-                  Descubre la Planta 9 CR7, toda una planta donde puedes disfrutar de una propuesta gastronómica con tres opciones diferentes: Pizzería, Sports Bar y Rooftop Bar (Sólo para adultos).
-                 </p>
-                 <a class="text-blue-600 underline mb-8 inline-block" href="#">
-                  Leer más
-                 </a>
+                 Aquí, cada amanecer es un espectáculo y cada experiencia está hecha a tu medida. Relájate, explora y déjate llevar por la magia de lo natural elevado al máximo nivel</p>
+       
+                 </div>
+                 
                  <h3 class="text-xl font-bold mb-4">
                   Principales servicios y amenities
                  </h3>
@@ -136,7 +135,7 @@
 
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.html" >Reservar ahora</a>
+                        <a href="reservar.jsp" >Reservar ahora</a>
                     </button>
                    </div>
                   </div>
@@ -160,7 +159,7 @@
 
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.html">Reservar ahora</a>
+                        <a href="reservar.jsp">Reservar ahora</a>
                     </button>
                    </div>
                   </div>
@@ -183,7 +182,7 @@
                      <a href="/HOTELES/html/Habitaciones/suitekingbalcon.html" id="foto-Vista-Rapida">Vista rápida</a>
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.html">Reservar ahora</a>
+                        <a href="reservar.jsp">Reservar ahora</a>
                     </button>
                    </div>
                   </div>
