@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>BELLAVISTA</title>
 </head>
     <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.tailwindcss.com"> </script>
@@ -47,7 +47,7 @@
                 <div class="background"></div>
                 <img src="fotos/BELLAVISTA_LOGO_BLANCO.png" alt="logoHero">
             </div>
-            
+            <button class="putobotonreservar"><span><a href="reservar.jsp">Reservar</a></span></button>
         </section>
         <section>
             <!-- Contenido adicional -->
