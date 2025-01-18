@@ -19,37 +19,37 @@
    <div class="container mx-auto flex justify-between items-center px-4">
     <div class="logo">
      <h1>
-      <a href="index.jsp">
-       <img alt="Logo del menú del hotel Bellavista en color blanco" src="fotos/logo_BELLAVIST_blanco.png"/>
+      <a href="../index.jsp">
+       <img alt="Logo del menú del hotel Bellavista en color blanco" src="../fotos/logo_BELLAVIST_blanco.png"/>
       </a>
      </h1>
     </div>
     <nav>
      <ul class="flex space-x-4">
       <li>
-       <a href="index.jsp">
+       <a href="../index.jsp">
         Inicio
        </a>
       </li>
       <li>
-       <a href="servicios.jsp">
+       <a href="../servicios.jsp">
         Servicios
        </a>
       </li>
       <li>
-       <a href="habitaciones.jsp">
+       <a href="../habitaciones.jsp">
         Habitaciones
        </a>
       </li>
       <li>
-       <a href="html/contacto.jsp">
+       <a href="../contacto.jsp">
         Contáctanos
        </a>
       </li>
       <li>
        <button>
         <span>
-         <a href="reservar.jsp">
+         <a href="../reservar.jsp">
           Reservar
          </a>
         </span>
