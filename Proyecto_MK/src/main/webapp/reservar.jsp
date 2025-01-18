@@ -52,7 +52,6 @@
             margin-top: -20px;
         }
 
-<<<<<<< HEAD
 
 .logo {
     text-decoration: none;
@@ -71,17 +70,6 @@
     z-index: 1; 
         }
 
-=======
-        .logo {
-            text-decoration: none;
-            color: inherit;
-            width: 100px;
-            height: 100px;
-            margin-top: 40px;
-            margin-left: 60px;
-        }
-
->>>>>>> a812d0f802db000c05250c7a82630e9d65b146b1
         nav ul {
             list-style: none;
             margin: 0;
