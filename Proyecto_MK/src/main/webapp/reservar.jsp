@@ -26,9 +26,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/png" href="<%= request.getContextPath() %>/fotos/logo_BELLAVIST_blanco.png" />
-
-    
     <style>
         body {
             margin: 0;
@@ -52,22 +49,20 @@
             margin-top: -20px;
         }
 
+        .logo {
+            text-decoration: none;
+            color: inherit;
+            width: 100px;
+            height: 100px;
+            margin-top: 40px;
+            margin-left: 60px;
+        }
 
-.logo {
-    text-decoration: none;
-    color: inherit;
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 60px;
-}
-
-
-.logo-container img {
-    display: block;
-    height: 500px; 
-    position: relative;
-    z-index: 1; 
+        .logo-container img {
+            display: block;
+            height: 50px; 
+            position: relative;
+            z-index: 2; 
         }
 
         nav ul {
@@ -193,10 +188,10 @@
         </div>
         <nav>
             <ul class="flex space-x-4">
-                <li><a href="index.jsp">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Habitaciones</a></li>
-                <li><a href="contacto.jsp">Contáctanos</a></li>
+                <li><a href="../html/contacto.html">Contáctanos</a></li>
                 <li><button><span><a href="reservar.jsp">Reservar</a></span></button></li>
             </ul>
         </nav>

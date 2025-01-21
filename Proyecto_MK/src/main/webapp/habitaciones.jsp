@@ -23,7 +23,7 @@
         <ul>
             <li><a href="index.jsp">Inicio</a></li>
             <li><a href="servicios.jsp">Servicios</a></li>
-            <li><a href="habitaciones.jsp">Habitaciones</a></li>
+            <li><a href="Habitaciones/habitaciones.jsp">Habitaciones</a></li>
             <li><a href="contacto.jsp">Contáctanos</a></li>
             <li>
                 <button><span><a href="reservar.jsp">Reservar</a></span></button>

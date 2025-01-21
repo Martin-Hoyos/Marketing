@@ -4,27 +4,42 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="css/style_contacto.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+<title>Contacto - BELLAVISTA</title>
+<link rel="stylesheet" href="css\style_contacto.css">
+<script src="https://cdn.tailwindcss.com"> </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head> 
+    
+<script src="WEB-INF/js/menu_idiomas.js">
+</script>
 <body>
- <header>
-            <div class="logo">
-                <a href="index.html"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.jsp">Inicio</a></li>
-                    <li><a href="servicios.jsp">Servicios</a></li>
-                    <li><a href="Habitaciones/habitaciones.jsp">Habitaciones</a></li>
-                    <li><a href="contacto.jsp">Contáctanos</a></li>
-                    <li>
-                        <button><span><a href="reservar.html">Reservar</a></span></button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header class="hidden-header">
+        <div class="logo">
+            <h1><a href="index.jsp"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.jsp">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="Habitaciones/habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.jsp">Contáctanos</a></li>
+                <li>
+                    <button><span><a href="reservar.jsp">Reservar</a></span></button>
+                </li>
+                <li id="flags">
+                    <!-- Menú de idiomas -->
+                    <select id="languageMenu" class="text-gray-700 bg-white border border-gray-300 rounded-md py-2 px-4">
+                        <option value="es" selected>Español</option>
+                        <option value="en">Inglés</option>
+                        <option value="fr">Francés</option>
+                        <option value="de">Alemán</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        
         <main>
             <div class="hotel">
                 <!-- Imagen Grande del Hotel -->
@@ -230,7 +245,7 @@
               </div>
               <!-- Logo -->
               <div>
-               <img width="140px" height="70px" alt="Company logo with a simple and elegant design" src="../fotos/BELLAVISTA_LOGO_BLANCO.png"/>
+               <img width="140px" height="70px" alt="Company logo with a simple and elegant design" src="fotos/BELLAVISTA_LOGO_BLANCO.png"/>
               </div>
              </div>
             </div>
@@ -248,4 +263,3 @@
     });
 	</script>
 </body>
-Lugares
