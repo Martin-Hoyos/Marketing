@@ -26,7 +26,7 @@
 </header>
 
 <h1>Deja tu Reseña del Hotel</h1>
-<form action="guardar_resena.php" method="POST">
+<form action="comentario" method="get" class="speaker-form">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
 
