@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .services, .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin-top: 15px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+    .hidden-header {
+    background-color: #111; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    display: flex; /* Para alinear contenido en línea */
+    justify-content: space-between; /* Espaciar logo y menú */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 60px; /* Espaciado horizontal */
+    height: 90px; /* Altura del encabezado */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+    opacity: 0.95;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Ajustar el tamaño del logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Alinear enlaces en fila */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaciado entre enlaces */
+}
+
+nav ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efecto al pasar el cursor */
+}
+.h-button {
+  background: black;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  position: relative; /* Asegura que el pseudo-elemento funcione */
+  display: inline-block;
+  overflow: hidden;
+}
+
+.h-button span {
+  display: inline-block;
+  min-width: 0.3em;
+  text-transform: uppercase;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+
+.h-button:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%; /* Centrado vertical */
+  transform: translateY(-50%);
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+}
+
+.h-button:hover:before,
+.h-button:focus:before {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.h-button:hover span,
+.h-button:focus span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.h-button:hover span:nth-child(1),
+.h-button:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+
+.h-button:hover span:nth-child(2),
+.h-button:focus span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+
+.h-button:hover span:nth-child(3),
+.h-button:focus span:nth-child(3) {
+  transition-delay: 0.075s;
+}
+
+.h-button:hover span:nth-child(4),
+.h-button:focus span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+
+.h-button:hover span:nth-child(5),
+.h-button:focus span:nth-child(5) {
+  transition-delay: 0.125s;
+}
+
+.h-button:hover span:nth-child(6),
+.h-button:focus span:nth-child(6) {
+  transition-delay: 0.15s;
+}

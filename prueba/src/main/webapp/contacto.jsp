@@ -21,9 +21,9 @@
         <nav>
             <ul>
                 <li><a href="index.jsp">Inicio</a></li>
-            <li><a href="Servicios_pricipal.jsp">Servicios</a></li>
-            <li><a href="habitaciones.jsp">Habitaciones</a></li>
-            <li><a href="contacto.jsp">Contáctanos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="Habitaciones/habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.jsp">Contáctanos</a></li>
                 <li>
                     <button><span><a href="reservar.jsp">Reservar</a></span></button>
                 </li>
