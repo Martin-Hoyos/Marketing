@@ -21,8 +21,8 @@
     </div>
     <nav>
         <ul>
-            <li><a href="index.jsp">Inicio</a></li>
-            <li><a href="servicios.jsp">Servicios</a></li>
+                <li><a href="index.jsp">Inicio</a></li>
+            <li><a href="Servicios_pricipal.jsp">Servicios</a></li>
             <li><a href="habitaciones.jsp">Habitaciones</a></li>
             <li><a href="contacto.jsp">Contáctanos</a></li>
             <li>

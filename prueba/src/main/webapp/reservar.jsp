@@ -188,10 +188,10 @@
         </div>
         <nav>
             <ul class="flex space-x-4">
-                   <li><a href="index.jsp">Inicio</a></li>
-            <li><a href="Servicios_pricipal.jsp">Servicios</a></li>
-            <li><a href="habitaciones.jsp">Habitaciones</a></li>
-            <li><a href="contacto.jsp">Contáctanos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Habitaciones</a></li>
+                <li><a href="../html/contacto.html">Contáctanos</a></li>
                 <li><button><span><a href="reservar.jsp">Reservar</a></span></button></li>
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="prueba.aa" %>
+<% %>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,9 +17,9 @@
     </div>
     <nav>
         <ul>
-                <li><a href="index.jsp">Inicio</a></li>
-            <li><a href="Servicios_pricipal.jsp">Servicios</a></li>
-            <li><a href="habitaciones.jsp">Habitaciones</a></li>
+            <li><a href="index.jsp">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Habitaciones</a></li>
             <li><a href="contacto.jsp">Contáctanos</a></li>
             <li><button><a href="reservar.jsp">Reservar</a></button></li>
         </ul>
