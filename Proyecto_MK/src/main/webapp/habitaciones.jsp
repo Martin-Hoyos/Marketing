@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>BELLAVISTA</title>
 </head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_habitaciones.css">
   <script src="https://cdn.tailwindcss.com"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -23,7 +23,7 @@
         <ul>
             <li><a href="index.jsp">Inicio</a></li>
             <li><a href="servicios.jsp">Servicios</a></li>
-            <li><a href="Habitaciones/habitaciones.jsp">Habitaciones</a></li>
+            <li><a href="habitaciones.jsp">Habitaciones</a></li>
             <li><a href="contacto.jsp">Contáctanos</a></li>
             <li>
                 <button><span><a href="reservar.jsp">Reservar</a></span></button>
@@ -43,153 +43,78 @@
     
 
     <main>
-        <section class="hero">
-            <div class="logo-container">
-                <div class="background"></div>
-                <img src="fotos/BELLAVISTA_LOGO_BLANCO.png" alt="logoHero">
-            </div>
-            <button class="putobotonreservar"><span><a href="reservar.jsp">Reservar</a></span></button>
-        </section>
-        <section>
-            <!-- Contenido adicional -->
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:w-1/2">
-                 <img alt="A table with a sandwich, fries, a blue cocktail, and an orange drink" class="w-full h-full object-cover" src="fotos/FOTO_CACERES.jpg"/>
-                </div>
-                <div class="lg:w-1/2 p-8 lg:p-16">
-                 <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">
-                  Vista General
-                 </h2>
-                 <div class="textoexplicacion">
-                 <h1 class="text-4xl font-bold mb-4">
-                  La Belleza de la Naturaleza
-                 </h1>
-                 <p class="text-lg mb-4">
-                 Sumérgete en la tranquilidad de nuestro hotel rural, un paraíso diseñado para quienes buscan desconectar en un entorno exclusivo y lleno de encanto. Rodeado de paisajes impresionantes y detalles cuidadosamente pensados, combinamos la calidez de lo rústico con el confort de instalaciones de lujo.</p>
-                 <p class="text-lg mb-4">
-                 Aquí, cada amanecer es un espectáculo y cada experiencia está hecha a tu medida. Relájate, explora y déjate llevar por la magia de lo natural elevado al máximo nivel</p>
-       
-                 </div>
-                 
-                 <h3 class="text-xl font-bold mb-4">
-                  Principales servicios y amenities
-                 </h3>
-                 <ul class="space-y-2">
-                  <li class="flex items-center">
-                   <i class="fas fa-swimming-pool mr-2">
-                   </i>
-                   Piscina exterior
-                  </li>
-                  <li class="flex items-center">
-                   <i class="fas fa-umbrella-beach mr-2">
-                   </i>
-                   Rooftop
-                  </li>
-                  <li class="flex items-center">
-                   <i class="fas fa-glass-martini-alt mr-2">
-                   </i>
-                   Bar
-                  </li>
-                  <li class="flex items-center">
-                   <i class="fas fa-dumbbell mr-2">
-                   </i>
-                   Centro de fitness
-                  </li>
-                  <li class="flex items-center">
-                   <i class="fas fa-utensils mr-2">
-                   </i>
-                   Restaurante
-                  </li>
-                  <li class="flex items-center">
-                   <i class="fas fa-parking mr-2">
-                   </i>
-                   Parking (de pago)
-                  </li>
-                 </ul>
-                </div>
-               </div>
-        </section>
         <section id="fotos_imagenes">
             <div class="container mx-auto px-4 py-8">
-                <div class="flex justify-between items-center mb-8">
-                 <h1 class="text-4xl font-light">
-                  HABITACIONES 
-                 </h1>
+                <div class="flex justify-center items-center mb-8">
+                    <h1 class="text-4xl font-light">HABITACIONES</h1>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                 <div class="relative">
-                  <img  src="fotos/FOTO_SUITE_QUEEN.jpg"/>
-                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                   <div class="flex items-center text-white mb-2">
-                    <i class="fas fa-user mr-2">
-                    </i>
-                    <span>
-                     2 HUESPEDES
-                    </span>
-                   </div>
-                   <h2 class="text-white text-xl font-bold">
-                    SUITE QUEEN de lujo
-                   </h2>
-                   <div class="flex space-x-2 mt-2">
-                    <button class="bg-transparent border border-white text-white py-1 px-4">
-                        <a href="/HOTELES/html/Habitaciones/suitequeen.html" id="foto-Vista-Rapida">Vista rápida</a>
-
-                    </button>
-                    <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.jsp" >Reservar ahora</a>
-                    </button>
-                   </div>
-                  </div>
-                 </div>
-                 <div class="relative">
-                  <img src="fotos/pestana-cr7-gran-via-room-deluxe-bed.jpg"/>
-                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                   <div class="flex items-center text-white mb-2">
-                    <i class="fas fa-users mr-2">
-                    </i>
-                    <span>
-                     3 HUESPEDES
-                    </span>
-                   </div>
-                   <h2 class="text-white text-xl font-bold">
-                    SUITE KING de Lujo
-                   </h2>
-                   <div class="flex space-x-2 mt-2">
-                    <button class="bg-transparent border border-white text-white py-1 px-4">
-                        <a href="/HOTELES/html/Habitaciones/suiteking.html" id="foto-Vista-Rapida">Vista rápida</a>
-
-                    </button>
-                    <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.jsp">Reservar ahora</a>
-                    </button>
-                   </div>
-                  </div>
-                 </div>
-                 <div class="relative">
-                  <img src="fotos/FOTO1_SUITE_KING_BALCON.jpeg"/>
-                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                   <div class="flex items-center text-white mb-2">
-                    <i class="fas fa-users mr-2">
-                    </i>
-                    <span>
-                        3 HUESPEDES
-                    </span>
-                   </div>
-                   <h2 class="text-white text-xl font-bold">
-                    SUITE KING de Lujo + BALCON
-                   </h2>
-                   <div class="flex space-x-2 mt-2">
-                    <button class="bg-transparent border border-white text-white py-1 px-4">
-                     <a href="/HOTELES/html/Habitaciones/suitekingbalcon.html" id="foto-Vista-Rapida">Vista rápida</a>
-                    </button>
-                    <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
-                        <a href="reservar.jsp">Reservar ahora</a>
-                    </button>
-                   </div>
-                  </div>
-                 </div>
-                 
+        
+                <!-- Suite Queen -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
+                    <div>
+                        <a href="Habitaciones/suitequeen.jsp">
+                            <img src="fotos/FOTO_SUITE_QUEEN.jpg" alt="Suite Queen de lujo" class="rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-110">
+                        </a>
+                    </div>
+                    <div class="pl-4">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">SUITE QUEEN de lujo</h2>
+                        <p class="text-gray-600 mb-4">Disfruta de la comodidad y el lujo en nuestra Suite Queen diseñada para 2 huéspedes. Equipado con todas las comodidades modernas y un diseño elegante.</p>
+                        <div class="flex space-x-4">
+                            <button class="bg-transparent border border-gray-800 text-gray-800 py-2 px-4 rounded">
+                                <a href="Habitaciones/suitequeen.jsp" id="foto-Vista-Rapida">Vista rápida</a>
+                            </button>
+                            <button class="bg-gray-800 text-white py-2 px-4 rounded">
+                                <a href="reservar.jsp">Reservar ahora</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Suite King -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
+                    <div>
+                        <a href="Habitaciones/suiteking.jsp">
+                            <img src="fotos/pestana-cr7-gran-via-room-deluxe-bed.jpg" alt="Suite King de lujo" class="rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-110">
+                        </a>
+                    </div>
+                    <div class="pl-4">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">SUITE KING de Lujo</h2>
+                        <p class="text-gray-600 mb-4">Ideal para 3 huéspedes, nuestra Suite King ofrece lujo, confort y espacio. Perfecta para quienes buscan una experiencia inolvidable.</p>
+                        <div class="flex space-x-4">
+                            <button class="bg-transparent border border-gray-800 text-gray-800 py-2 px-4 rounded">
+                                <a href="Habitaciones/suiteking.jsp" id="foto-Vista-Rapida">Vista rápida</a>
+                            </button>
+                            <button class="bg-gray-800 text-white py-2 px-4 rounded">
+                                <a href="reservar.jsp">Reservar ahora</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Suite King + Balcón -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 items-center">
+                    <div>
+                        <a href="Habitaciones/suitekingbalcon.jsp">
+                            <img src="fotos/FOTO1_SUITE_KING_BALCON.jpeg" alt="Suite King con Balcón" class="rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-110">
+                        </a>
+                    </div>
+                    <div class="pl-4">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">SUITE KING de Lujo + BALCÓN</h2>
+                        <p class="text-gray-600 mb-4">Una experiencia superior para 3 huéspedes, nuestra Suite King con balcón ofrece vistas impresionantes y una estancia llena de lujo y confort.</p>
+                        <div class="flex space-x-4">
+                            <button class="bg-transparent border border-gray-800 text-gray-800 py-2 px-4 rounded">
+                                <a href="Habitaciones/suitekingbalcon.jsp" id="foto-Vista-Rapida">Vista rápida</a>
+                            </button>
+                            <button class="bg-gray-800 text-white py-2 px-4 rounded">
+                                <a href="reservar.jsp">Reservar ahora</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+        
     </main>
 
    
