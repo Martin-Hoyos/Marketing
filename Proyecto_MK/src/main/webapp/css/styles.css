@@ -124,11 +124,15 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
     align-items: center;
+    transition: all 0.3s ease; /* Añadimos una transición suave */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    font-size: 24px; /* Aumenta el tamaño de las letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra negra */
+    text-decoration: none; /* Opcional: puedes eliminar el subrayado al hacer hover */
 }
+
 
 /* Botón Reservar 
 button {

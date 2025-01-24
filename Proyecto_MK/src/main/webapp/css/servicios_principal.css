@@ -45,54 +45,58 @@
             color: #666;
         }
         
-    .hidden-header {
-    background-color: #111; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    display: flex; /* Para alinear contenido en línea */
-    justify-content: space-between; /* Espaciar logo y menú */
-    align-items: center; /* Centrar verticalmente */
-    padding: 0 60px; /* Espaciado horizontal */
-    height: 90px; /* Altura del encabezado */
-    position: fixed; /* Fijo en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra */
-    opacity: 0.95;
-}
+        .hidden-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: linear-gradient(to bottom, #0c1401, rgba(12, 20, 1, 0));
+          color: white;
+          padding: 10px 20px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          height: 80px;
+      }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
+      .logo {
+        text-decoration: none;
+        color: inherit;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 60px;
+    }
 .logo img {
     max-height: 50px; /* Ajustar el tamaño del logo */
 }
-
 nav ul {
-    list-style: none;
-    display: flex; /* Alinear enlaces en fila */
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin: 0 20px; /* Espaciado entre enlaces */
+  margin: 0 15px;
 }
-
 nav ul li a {
-    color: #fff; /* Texto blanco */
-    text-decoration: none;
-    font-size: 18px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+  transition: all 0.3s ease; /* Añadimos una transición suave */
 }
-
 nav ul li a:hover {
-    text-decoration: underline; /* Efecto al pasar el cursor */
+  font-size: 24px; /* Aumenta el tamaño de las letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra negra */
+  text-decoration: none; /* Opcional: puedes eliminar el subrayado al hacer hover */
 }
 .h-button {
-  background: black;
+  background: rgb(216, 215, 215);
+  color: #333;
   padding: 20px;
   width: 250px;
   text-align: center;

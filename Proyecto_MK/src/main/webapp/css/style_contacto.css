@@ -6,18 +6,19 @@ body {
 }
 
 .hidden-header {
-    display: none;
-    background: linear-gradient(to bottom, #0c1401, rgba(12, 20, 1, 0)); /* Degradado de verde a transparente */
-    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #0c1401, rgba(12, 20, 1, 0));
+    color: white;
     padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 100px;
+    height: 80px;
 }
-
 
 
 
@@ -36,31 +37,12 @@ body {
     margin-top: 40px;
     margin-left: 60px;
 }
-/*
-.logo-container {
-    position: relative;
-    display: inline-block;
-}
-*/
 .logo-container img {
     display: block;
     height: 500px; 
     position: relative;
     z-index: 1; 
 }
-/*
-.logo-container .background {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 620px; 
-    height: 320px; 
-    background-color: rgba(255, 255, 255, 0.982);
-    z-index: 1; 
-    border-radius: 5px; 
-}
-*/
 nav ul {
     list-style: none;
     margin: 0;
@@ -78,56 +60,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
     align-items: center;
+    transition: all 0.3s ease; /* Añadimos una transición suave */
 }
-
 nav ul li a:hover {
-    text-decoration: underline;
+    font-size: 24px; /* Aumenta el tamaño de las letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra negra */
+    text-decoration: none; /* Opcional: puedes eliminar el subrayado al hacer hover */
 }
-
-/* Botón Reservar 
-button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #3d405b;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 17px;
-    padding: 16px;
-    width: 130px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-button span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-}
-
-button:hover span {
-    padding-right: 15px;
-}
-
-button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-*/
-/*-----------------------------------------FOTOS HABITACIONES-------------------------------------------------------*/
-/* General Styles */
-
 
 /* Section Container */
 
@@ -312,46 +251,6 @@ footer a {
 
 
 
-
-.logo {
-    text-decoration: none;
-    color: inherit;
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 60px;
-}
-
-.logo-container img {
-    display: block;
-    height: 50px; 
-    position: relative;
-    z-index: 2; 
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-    margin-top: 20px;
-}
-
-nav ul li a {
-    align-items: center;
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-    font-size: 20px;
-    align-items: center;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 
 /* Estilos para las imágenes de los hoteles */

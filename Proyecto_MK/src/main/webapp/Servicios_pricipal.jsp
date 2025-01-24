@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
     <link rel="stylesheet" href="css/servicios_principal.css">
-<title>Insert title here</title>
+<title>Servicios - BELLAVISTA</title>
 </head>
 <body>
 <header class="hidden-header">
@@ -20,7 +20,7 @@
             <li><a href="habitaciones.jsp">Habitaciones</a></li>
             <li><a href="contacto.jsp">Contáctanos</a></li>
             <li>
-                <button><span><a href="reservar.jsp">Reservar</a></span></button>
+                <span><a href="reservar.jsp">Reservar</a></span>
             </li>
             <li id="flags">
                 <!-- Menú de idiomas -->
