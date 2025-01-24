@@ -132,7 +132,7 @@
                    </h2>
                    <div class="flex space-x-2 mt-2">
                     <button class="bg-transparent border border-white text-white py-1 px-4">
-                        <a href="/HOTELES/html/Habitaciones/suitequeen.html" id="foto-Vista-Rapida">Vista rápida</a>
+                        <a href="/HOTELES/html/Habitaciones/suitequeen.jsp" id="foto-Vista-Rapida">Vista rápida</a>
 
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
@@ -156,7 +156,7 @@
                    </h2>
                    <div class="flex space-x-2 mt-2">
                     <button class="bg-transparent border border-white text-white py-1 px-4">
-                        <a href="/HOTELES/html/Habitaciones/suiteking.html" id="foto-Vista-Rapida">Vista rápida</a>
+                        <a href="/HOTELES/html/Habitaciones/suiteking.jsp" id="foto-Vista-Rapida">Vista rápida</a>
 
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
@@ -180,7 +180,7 @@
                    </h2>
                    <div class="flex space-x-2 mt-2">
                     <button class="bg-transparent border border-white text-white py-1 px-4">
-                     <a href="/HOTELES/html/Habitaciones/suitekingbalcon.html" id="foto-Vista-Rapida">Vista rápida</a>
+                     <a href="..Habitaciones/suitekingbalcon.jsp" id="foto-Vista-Rapida">Vista rápida</a>
                     </button>
                     <button id="foto-Reservar-ahora" class="bg-white text-black py-1 px-4">
                         <a href="reservar.jsp">Reservar ahora</a>
