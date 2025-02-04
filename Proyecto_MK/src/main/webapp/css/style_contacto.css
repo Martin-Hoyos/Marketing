@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* General */
+/* Estilo para todo el body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -47,7 +46,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 nav ul li {
@@ -118,109 +116,169 @@ nav ul li a:hover {
 }
 #fotos_imagenes img {
     width: 100%;
-    height: 600px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes cubran el espacio */
-    border-radius: 8px 8px 0 0;
+    height: 500px; /* Puedes cambiar este valor según el tamaño que prefieras */
+    overflow: hidden;
+    display: block;
+    margin-bottom: 30px;
 }
 
-/* Overlay for Text */
-#fotos_imagenes .absolute {
+/* Estilos para las imágenes comparativas */
+.c-mapimg-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contenedor del deslizador */
+.custom-handle {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, #0c1401, rgba(10, 25, 4, 0));
-    color: white;
-    padding: 10px 15px;
-    border-radius: 0 0 8px 8px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    cursor: ew-resize;
+    user-select: none;
 }
 
-#fotos_imagenes .absolute h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Barra de deslizar personalizada */
+.custom-handle path {
+    fill: #007bff; /* Color de la barra */
 }
 
-#fotos_imagenes .absolute .flex {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-/* Buttons */
-#fotos_imagenes button {
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 20px;
+/* Estilos para el área de la primera imagen */
+.c-mapimg-slider__first {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 50%, 100%, 0); /* Empieza con la mitad visible */
     transition: all 0.3s ease;
 }
 
-#fotos_imagenes .bg-transparent {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
+/* Estilos para el área de la segunda imagen (la ubicación o mapa) */
+.c-mapimg-slider__second {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 100%, 100%, 50%); /* Empieza con la otra mitad visible */
+    transition: all 0.3s ease;
 }
 
-#fotos_imagenes .bg-transparent:hover {
-    background-color: white;
-    color: black;
-}
-
-#fotos_imagenes .bg-white {
-    background-color: white;
-    color: black;
-}
-
-#fotos_imagenes .bg-white:hover {
-    background-color: #0c1401;
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    #fotos_imagenes .grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
-    }
-}
-
+/* Responsividad */
 @media (max-width: 768px) {
-    #fotos_imagenes .grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
-
-    #fotos_imagenes img {
-        height: 300px; /* Ajustar altura para pantallas pequeñas */
+    .c-map-img-slider {
+        height: 400px; /* Ajustamos la altura para pantallas pequeñas */
     }
 }
 
-
-/* Sección Hero */
-.hero {
-    background-image: url('../fotos/foto1.png');
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+/* Estilo para la información del hotel */
+.hotel-info {
+    font-family: 'Arial', sans-serif;
+    color: #333;
     padding: 20px;
-}
-
-.texto-hero {
-    padding: 20px;
+    background-color: white;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Títulos de la información */
+.hotel-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Párrafos de la información */
+.hotel-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilos para la sección de contacto */
+.hotel-info .contact-info {
+    margin-top: 20px;
+}
+
+.hotel-info .contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.hotel-info .contact-info span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Contenedor para las imágenes del hotel */
+.hotel-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hotel-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hotel-info {
+        padding: 15px;
+    }
+
+    .hotel-info h2 {
+        font-size: 24px;
+    }
+
+    .hotel-info p {
+        font-size: 14px;
+    }
+
+    .hotel-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-images img {
+        width: 90%;
+    }
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #007bff;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
 footer p {
@@ -228,26 +286,6 @@ footer p {
     font-size: 14px;
 }
 
-footer a {
-    text-decoration: none;
-    color: azure;
-}
-
-/* estilos bandera*/
-/* Estilos para el menú desplegable */
-#languageMenu {
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    color: #333;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-
-#languageMenu:hover {
-    background-color: #eaeaea;
-}
 
 
 

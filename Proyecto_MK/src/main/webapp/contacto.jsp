@@ -14,6 +14,41 @@
 <script src="WEB-INF/js/menu_idiomas.js">
 </script>
 <body>
+	<script>
+    // Código JS para la comparación de imágenes
+    document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.custom-handle');
+        const firstImage = document.querySelector('.c-mapimg-slider__first');
+        const secondImage = document.querySelector('.c-mapimg-slider__second');
+        
+        let isDragging = false;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            document.body.style.cursor = 'ew-resize';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const sliderRect = slider.parentElement.getBoundingClientRect();
+            const offsetX = e.clientX - sliderRect.left;
+            const percentage = (offsetX / sliderRect.width) * 100;
+
+            firstImage.style.clip = `rect(0, ${percentage}%, 100%, 0)`;
+            secondImage.style.clip = `rect(0, 100%, 100%, ${percentage}%)`;
+            slider.style.left = `${percentage}%`;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.style.cursor = 'default';
+        });
+
+        // So the slider is initialized at the correct position on page load
+        window.dispatchEvent(new Event('mousemove'));
+    });
+</script>
     <header class="hidden-header">
         <div class="logo">
             <h1><a href="index.jsp"><img src="fotos/logo_BELLAVIST_blanco.png" alt="LogoMenu"></a></h1>
@@ -39,98 +74,56 @@
             </ul>
         </nav>
     </header>
-        
-        <main>
-            <div class="hotel">
-                <!-- Imagen Grande del Hotel -->
-                <div class="hotel-image">
-                    <img src="fotos/hotel1.png" alt="Descripción de la imagen">
-                </div>
-                <!-- Detalles de Contacto con Mapa al lado -->
-                <div class="hotel-details">
-                    <div class="contact-details">
-                        <p>📍 Valles Pasiegos, Cantabria</p>
-                        <p>📞 646 345 278</p>
-                        <p>📧 reservahotel@bellavista.com</p>
-                        <p>Síguenos: @bellavista_</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186169.0438129009!2d-3.9996089879929677!3d43.19079140028091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd492ead81057a2d%3A0x7418f2d40cfc75b0!2sPas%20-%20Miera%2C%20Cantabria!5e0!3m2!1ses!2ses!4v1736940458081!5m2!1ses!2ses" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="hotel">
-                <!-- Imagen Grande del Hotel -->
-                <div class="hotel-image">
-                    <img src="fotos/hotel2.png" alt="Descripción de la imagen">
-                </div>
-                <!-- Detalles de Contacto con Mapa al lado -->
-                <div class="hotel-details">
-                    <div class="contact-details">
-                        <p>📍 Vall de boí, Lérida</p>
-                        <p>📞 603 345 299</p>
-                        <p>📧 reservahotel@bellavista.com</p>
-                        <p>Síguenos: @bellavista_</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94065.91776353867!2d0.7734877789354754!3d42.54340206168208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6209c8c0ff1d3%3A0x400fae021a4bc30!2zVmFsbGUgZGUgQm9ow60sIEzDqXJpZGE!5e0!3m2!1ses!2ses!4v1736940561732!5m2!1ses!2ses" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="hotel">
-                <!-- Imagen Grande del Hotel -->
-                <div class="hotel-image">
-                    <img src="fotos/hotel3.png" alt="Descripción de la imagen">
-                </div>
-                <!-- Detalles de Contacto con Mapa al lado -->
-                <div class="hotel-details">
-                    <div class="contact-details">
-                        <p>📍 Las Hurdes (Cáceres)</p>
-                        <p>📞 644 678 098</p>
-                        <p>📧 reservahotel@bellavista.com</p>
-                        <p>Síguenos: @bellavista_</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194547.62357483563!2d-6.440480505943574!3d40.36881207553705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3e7b76a4ea497b%3A0x20ba5dfa934d99a1!2sLas%20Hurdes%2C%20C%C3%A1ceres!5e0!3m2!1ses!2ses!4v1736940620424!5m2!1ses!2ses" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </main>
+	<main>
+	    <div class="col-12 col-sm">
+	    <c-map-img-slider class="d-block o-cont-fullw o-cont-sm-fullw__right">
+	        <img-comparison-slider class="c-mapimg-slider rendered" tabindex="0">
+	            <!-- Imagen 1: Hotel -->
+	            <img slot="first" width="100%" src="fotos/hotel1.png" alt="Imagen del hotel">
+	            <!-- Imagen 2: Mapa o ubicación -->
+	            <img slot="second" width="100%" src="fotos/maps.png" alt="Ubicación del hotel">
+	            <!-- Barra de comparación -->
+	            <svg slot="handle" xmlns="http://www.w3.org/2000/svg" width="500" viewBox="0 0 100 6" value="65" class="custom-handle">
+	                <path d="M37.3,3l2.1,1.8V1.2L37.3,3z" fill="currentColor"></path>
+	                <path d="M62.6,3l-2.1-1.8v3.6L62.6,3z" fill="currentColor"></path>
+	                <circle cx="50" cy="3.1" r="1.3" fill="currentColor" stroke="black" stroke-width=".25"></circle>
+	            </svg>
+	        </img-comparison-slider>
+	    </c-map-img-slider>
+		</div>
+		<div class="col-12 col-sm">
+	    <c-map-img-slider class="d-block o-cont-fullw o-cont-sm-fullw__right">
+	        <img-comparison-slider class="c-mapimg-slider rendered" tabindex="0">
+	            <!-- Imagen 1: Hotel -->
+	            <img slot="first" width="100%" src="fotos/hotel2.png" alt="Imagen del hotel">
+	            <!-- Imagen 2: Mapa o ubicación -->
+	            <img slot="second" width="100%" src="fotos/maps.png" alt="Ubicación del hotel">
+	            <!-- Barra de comparación -->
+	            <svg slot="handle" xmlns="http://www.w3.org/2000/svg" width="500" viewBox="0 0 100 6" value="65" class="custom-handle">
+	                <path d="M37.3,3l2.1,1.8V1.2L37.3,3z" fill="currentColor"></path>
+	                <path d="M62.6,3l-2.1-1.8v3.6L62.6,3z" fill="currentColor"></path>
+	                <circle cx="50" cy="3.1" r="1.3" fill="currentColor" stroke="black" stroke-width=".25"></circle>
+	            </svg>
+	        </img-comparison-slider>
+	    </c-map-img-slider>
+		</div>
+		 <div class="col-12 col-sm">
+	    <c-map-img-slider class="d-block o-cont-fullw o-cont-sm-fullw__right">
+	        <img-comparison-slider class="c-mapimg-slider rendered" tabindex="0">
+	            <!-- Imagen 1: Hotel -->
+	            <img slot="first" width="100%" src="fotos/hotel3.png" alt="Imagen del hotel">
+	            <!-- Imagen 2: Mapa o ubicación -->
+	            <img slot="second" width="100%" src="fotos/maps.png" alt="Ubicación del hotel">
+	            <!-- Barra de comparación -->
+	            <svg slot="handle" xmlns="http://www.w3.org/2000/svg" width="500" viewBox="0 0 100 6" value="65" class="custom-handle">
+	                <path d="M37.3,3l2.1,1.8V1.2L37.3,3z" fill="currentColor"></path>
+	                <path d="M62.6,3l-2.1-1.8v3.6L62.6,3z" fill="currentColor"></path>
+	                <circle cx="50" cy="3.1" r="1.3" fill="currentColor" stroke="black" stroke-width=".25"></circle>
+	            </svg>
+	        </img-comparison-slider>
+	    </c-map-img-slider>
+		</div>
+		</main>
         <footer class="py-8" style="background-color: #0c1401;">
             <div class="container mx-auto px-4">
              <div class="flex flex-wrap justify-between">
